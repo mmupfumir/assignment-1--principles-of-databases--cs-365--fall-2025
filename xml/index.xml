@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <student studentID="1234567" status="first year" enrollmentStatus="full-time" gpa="4.0">
+    <name first="Gordon" middle="Matthew" last="Sumner" preferred="Sting"/>
+    <contact email="sting@thepolice.com" phone="212.123.4567"/>
+    <major>Music</major>
+    <minor>English</minor>
+    <advisor>Andy Summers</advisor>
+    <initialEnrollment>1969-08-25</initialEnrollment>
+    <graduationDate>1973-05-01</graduationDate>
+  </student>
+
+  <student studentID="4567890" status="second year" enrollmentStatus="full-time" gpa="3.0">
+    <name first="Kim" last="Thayil"/>
+    <contact email="kim@soundgarden.com" phone="206.123.4567"/>
+    <major>Philosophy</major>
+    <minor>Music</minor>
+    <advisor>Chris Cornell</advisor>
+    <initialEnrollment>1978-08-25</initialEnrollment>
+    <graduationDate>1982-05-01</graduationDate>
+  </student>
+
+  <student studentID="8302438" status="fourth year" enrollmentStatus="part-time" gpa="2.0">
+    <name first="Saul" last="Hudson" preferred="Slash"/>
+    <contact email="slash@gnr.com" phone="213.456.8392"/>
+    <major>Music</major>
+    <minor>Criminal Justice</minor>
+    <advisor>Axl Rose</advisor>
+    <initialEnrollment>1983-08-25</initialEnrollment>
+    <graduationDate>1987-05-01</graduationDate>
+  </student>
+
+  <student studentID="2983928" status="third year" enrollmentStatus="full-time" gpa="3.8">
+    <name first="Emily" last="Kokal"/>
+    <contact email="emily@warpaint.com" phone="213.123.7654"/>
+    <major>Political Science</major>
+    <minor>Law</minor>
+    <advisor>Jenny Lee Lindberg</advisor>
+    <initialEnrollment>1998-08-25</initialEnrollment>
+    <graduationDate>2002-05-01</graduationDate>
+  </student>
+
+  <student studentID="7645726" status="second year" enrollmentStatus="full-time" gpa="4.0">
+    <name first="Mike" last="Inez"/>
+    <contact email="mike@aic.com" phone="213.444.3323"/>
+    <major>Business Management</major>
+    <minor>Math</minor>
+    <advisor>Jerry Cantrell</advisor>
+    <initialEnrollment>1984-08-25</initialEnrollment>
+    <graduationDate>1988-05-01</graduationDate>
+  </student>
+</students>

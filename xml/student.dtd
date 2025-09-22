@@ -1,0 +1,47 @@
+<!-- Root element containing all students -->
+<!ELEMENT students (student+)>
+
+<!-- Each student has name, contact info, advisor, dates, major, and optional minor -->
+<!ELEMENT student (name, contact, advisor, dates, major, minor?)>
+
+<!-- Attributes for student metadata -->
+<!ATTLIST student
+  id ID #REQUIRED             <!-- Unique student identifier -->
+  status CDATA #REQUIRED       <!-- Year in school (first-year, second-year, etc.) -->
+  enrollment CDATA #REQUIRED   <!-- full-time or part-time -->
+  gpa CDATA #REQUIRED          <!-- GPA as a decimal -->
+>
+
+<!-- Name element stores all name info in attributes -->
+<!ELEMENT name EMPTY>
+
+<!-- Attributes for student name -->
+<!ATTLIST name
+  first CDATA #REQUIRED        <!-- First name -->
+  middle CDATA #IMPLIED        <!-- Middle name, optional -->
+  last CDATA #REQUIRED         <!-- Last name -->
+  preferred CDATA #IMPLIED     <!-- Nickname / preferred name, optional -->
+>
+
+<!-- Contact info stored as attributes -->
+<!ELEMENT contact EMPTY>
+
+<!ATTLIST contact
+  email CDATA #REQUIRED         <!-- Student email -->
+  phone CDATA #REQUIRED         <!-- Student phone number -->
+>
+
+<!-- Advisor is just text content -->
+<!ELEMENT advisor (#PCDATA)>
+
+<!-- Dates element holds enrollment and graduation info as attributes -->
+<!ELEMENT dates EMPTY>
+
+<!ATTLIST dates
+  initialEnrollment CDATA #REQUIRED  <!-- Start date -->
+  graduationDate CDATA #REQUIRED     <!-- Expected or actual graduation date -->
+>
+
+<!-- Major and minor elements are text -->
+<!ELEMENT major (#PCDATA)>
+<!ELEMENT minor (#PCDATA)>  <!-- Optional minor -->

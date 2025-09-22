@@ -1,0 +1,41 @@
+students {
+  font-family: Inter, sans-serif;
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 50px;
+}
+
+student {
+  display: block;
+  margin-bottom: 50px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+student * {
+  display: block;
+}
+
+student *::before {
+  font-weight: bold;
+}
+
+firstName::before { content: "First Name: "; }
+middleName::before { content: "Middle Name: "; }
+lastName::before { content: "Last Name: "; }
+preferredName::before { content: "Preferred Name: "; }
+studentID::before { content: "Student ID: "; }
+email::before { content: "Email: "; }
+phone::before { content: "Phone: "; }
+status::before { content: "Status: "; }
+gpa::before { content: "GPA: "; }
+major::before { content: "Major: "; }
+minor::before { content: "Minor: "; }
+enrollmentStatus::before { content: "Enrollment Status: "; }
+advisor::before { content: "Advisor: "; }
+initialEnrollment::before { content: "Initial Enrollment: "; }
+graduationDate::before { content: "Graduation Date: "; }
